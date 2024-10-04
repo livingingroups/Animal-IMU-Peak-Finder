@@ -87,3 +87,11 @@ print(peaks)
 ```
 
 In this basic example, we create a vector of `acceleration_data` that simulates walking bouts, with acceleration spikes occurring during specific walking bouts, while the majority of the data remains minimal to simulate inactivity or low activity. The data is sampled at 20 Hz, and we generate approximately 4 minutes worth of data. Walking bouts are modelled as sinusoidal segments with some added noise to reflect the irregularity of natural movement. We then use `Gundog.Peaks` to identify local maxima in the data, with a threshold (`thresh`) of 50% relative to the tallest peak and a span (`LoM`) of 10. The resulting peaks are plotted, and a summary of detected peaks is printed.
+
+## License
+
+This project is licensed under the MIT License - see the `LICENSE` file for details.
+
+## Contact
+
+For questions or suggestions, feel free to contact me at [rgunner@ab.mpg].
