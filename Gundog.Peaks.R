@@ -86,8 +86,8 @@ Gundog.Peaks = function(TS, x, thresh = 0, LoM = 5, constant = "med", ME = 1, pl
     ref <- max_value - constant
     if (outlier != FALSE) {
       ref <- quantile_value - constant
-      SHT <- ref * (abs(thresh) / 100)
     }
+    SHT <- ref * (abs(thresh) / 100)
   } else {
     # Only one constant value, so no need to vectorize
     ref <- (range(x[ME > 0], finite = TRUE)[2] - constant)
